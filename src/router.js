@@ -8,7 +8,6 @@ export default props => (
   <Router>
     <div>
       <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
     </div>
   </Router>
 );

@@ -1,0 +1,15 @@
+{
+  "files.exclude": {
+    "node_modules/": true,
+    "yarn.lock": true
+  },
+  "search.exclude": {
+    "node_modules/": true
+  },
+  "prettier.printWidth": 88,
+  "prettier.trailingComma": "none",
+  "prettier.singleQuote": true,
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": true,
+  "editor.formatOnSave": true
+}

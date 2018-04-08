@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 class SnapScroll extends React.Component {
   static defaultProps = {
-    evalAfterScroll: 300, // px
+    evalAfterScroll: 200, // px
     timeoutClearScroll: 100, // ms
   };
 
@@ -24,7 +24,7 @@ class SnapScroll extends React.Component {
   }
 
   state = {
-    displayedSection: 0,
+    displayedSection: -1,
     blockedScroll: false,
   };
 
@@ -116,7 +116,7 @@ class SnapScroll extends React.Component {
             }}
           >
             <SectionContent position={this.getSectionPosition(index - 1)}>
-              <Section>{index}</Section>
+              <Section preview={true}/>
             </SectionContent>
 
             <SectionFootprint />
@@ -155,8 +155,6 @@ const SectionContent = styled.div`
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: white;
-  box-shadow: 0 0 10px black;
   left: 0;
   top: ${props => sectionTopPos(props.position)};
   transition: top 300ms ease-in-out;

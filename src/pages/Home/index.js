@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import SnapScroll from '../components/SnapScroll';
+
+import SnapScroll from '../../components/SnapScroll';
+import ProjectAlpha from '../ProjectAlpha';
 
 const Home = () => (
   <div>
-    <SnapScroll sections={[Section1, Section2, Section3]} />
+    <SnapScroll sections={[ProjectAlpha, Section2, Section3]} />
   </div>
 );
 
